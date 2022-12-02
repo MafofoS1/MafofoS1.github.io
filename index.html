@@ -11,6 +11,10 @@
 </head>
 <body>
 
+    <div id = "preloader"></div>
+
+
+
     <div class="nav-container">
         <nav>
             <ul class="mobile-nav">
@@ -141,6 +145,14 @@
     <div class="overlay"></div>
     
     <script src="navbar.js"></script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 
 </body>
 </html>
