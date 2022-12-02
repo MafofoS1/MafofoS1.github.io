@@ -1,3 +1,10 @@
+:root {
+    --text: #1d1d1f;
+    --blue: #0071e3;
+    --a: #2997ff;
+    --information: #ff0000;
+}
+
 *,
 *::after,
 *::before {
@@ -5,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: "Inter", sans-serif;
@@ -695,4 +703,34 @@ a {
     text-align: center;
     font-size: 13px;
     color: #aaa;
+}
+
+.information {
+    height: 45px;
+    width: 100%;
+    background: var(--blue);
+    text-align: center;
+    line-height: 45px;
+    margin-top: 44px;   
+    font-size: 14px;
+}
+
+.information a {
+    color: white;
+    text-decoration: none;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
+.information-2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text);
+    margin: 0;
+}
+
+.information-2 a {
+    color: var(--blue);
+    
 }
