@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DP Studio</title>
+    <title>MM Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- <body style="background-color: #f3eee5;"></body> -->
+
+    <link rel="icon" href="images/apple-logo.svg">
+</head> 
 <body>
+
+
+
+    <!-- Informacie -->
+
+    <!-- <div class="information">
+        <a href="https://www.worldometers.info/coronavirus/"
+        >Evaluate COVID-19 symptoms and understand next steps
+        </a>
+    </div>
+
+    <div class="information information-2">
+        <a href="#">Shop online </a> and fee free, no-contact delivery, Specialist
+        help, and more.
+        
+    </div> -->
+
+    <!-- Koniec Informacie -->
+
+
+
+    <div id = "preloader"></div>
+
+
 
     <div class="nav-container">
         <nav>
@@ -136,12 +165,89 @@
         
 
     </div>
-    <div class="newpage-look"></div>
+
+    <!-- Shop Page Header -->
+
+    <section id="page-shop-header">
+
+
+        <h2>Top G Collection</h2>
+
+        <p>Save more money to spent more on this!</p>
+
+    </section>
+
+    <!-- Koniec Shop Page Header -->
+    
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="images/iQeFqhZBnjPNzBQI7ZTLJys2qTAUIOPdh3Eb6QWV.jpg" alt="">
+                <div class="des">
+                    <span>Andrew</span>
+                    <h5>What color is your Bugatti ?!</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$195,50</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porodukty Start -->
+
+
+
+    <!-- Footer Stranky -->
+
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            MM Studio © 2022 All rights reserved
+        </p>
+    </section>
+    <!-- Footer Stranky  Koniec-->
 
 
     <div class="overlay"></div>
     
     <script src="navbar.js"></script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 
 </body>
 </html>
